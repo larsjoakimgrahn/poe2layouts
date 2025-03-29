@@ -1,0 +1,45 @@
+---
+import ZoneLayoutCard from '../components/ZoneLayoutCard.astro';
+import StickyHeader from '../components/StickyHeader.astro';
+import PageTitle from '../components/PageTitle.astro';
+import Layout from '../layouts/Layout.astro';
+const { act } = Astro.params;
+
+export function getStaticPaths() {
+  return [
+    { params: { act: 1 }},
+    { params: { act: 2 }},
+    { params: { act: 3 }},
+  ];
+}
+const images = import.meta.glob('/src/assets/**/*')
+const filteredImages = Object.entries(images).filter(([path]) => {
+  return path.startsWith(`/src/assets/act${act}/`)
+});
+---
+<Layout>
+<html>
+  <head>
+    <title>Act: {act}</title>
+  </head>
+  <body>
+    <StickyHeader />
+    <PageTitle title={`Act ${act}`} />
+    <div class="zone-images-container">
+      {filteredImages.map(([path], index) => {
+          return <ZoneLayoutCard path={path} imageId={index} key={index} />;
+      })}
+    </div>
+    
+  </body>
+</html>
+<style>
+  .zone-images-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+</style>
+</Layout>
