@@ -6,6 +6,9 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
     site: "https://larsjoakimgrahn.github.io/poe2layouts/",
     base: "/poe2layouts/",
+    build: {
+      assets: "astro"
+    },
     vite: {
         plugins: [],
     },
