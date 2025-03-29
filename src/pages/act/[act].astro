@@ -12,7 +12,7 @@ export async function getStaticPaths(): Promise<{ params: { act: number } }[]> {
             act: currentAct.data.act, 
         },
         props: {
-            acts: acts,
+            acts: acts.sort((a, b) => a.data.act - b.data.act),
             title: currentAct.data.title,
             zones: currentAct.data.zones.map((zone) => ({
                 title: zone.title,

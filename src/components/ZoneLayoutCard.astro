@@ -6,24 +6,23 @@ const { image, imageId, title } = Astro.props;
 
 <div class="zone-layout-card" id=`zone-${imageId}`>
     <a href=`#zone-${imageId-1}`>Prev</a>
-    <Image src={image} alt={title} />
+    <Image class="cool-image" src={image} alt={title} />
     <a href=`#zone-${imageId+1}`>Next</a>
 </div>
 
 <style>
-    div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
-    img {
-        max-width: 90vw;
-        max-height: 90vh;
+    .cool-image {
+        max-width: 1440px;
+        max-height: 1440px;
         margin: 2rem;
         scroll-snap-align: start;
     }
     .zone-layout-card {
-        padding: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding: 1rem;
     }
 </style>
