@@ -1,0 +1,70 @@
+{
+    "title": "Act 1",
+    "act": 1,
+    "zones": [
+        {
+            "title": "Clearfell",
+            "image": "/src/assets/act1/01_clearfell1.webp"
+        },
+        {
+            "title": "Mud Burrow",
+            "image": "/src/assets/act1/02_mud_burrow.webp"
+        },
+        {
+            "title": "Grelwood",
+            "image": "/src/assets/act1/03_grelwood.webp"
+        },
+        {
+            "title": "Red Vale",
+            "image": "/src/assets/act1/04_red_vale.webp"
+        },
+        {
+            "title": "Grim Tangle",
+            "image": "/src/assets/act1/05_grim_tangle.webp"
+        },
+        {
+            "title": "Cemetary",
+            "image": "/src/assets/act1/06_cemetary.webp"
+        },
+        {
+            "title": "Consort's Lair",
+            "image": "/src/assets/act1/07_consort.webp"
+        },
+        {
+            "title": "Praetor's Lair",
+            "image": "/src/assets/act1/08_praetor.webp"
+        },
+        {
+            "title": "Hunting Grounds",
+            "image": "/src/assets/act1/09_hunting_grounds.webp"
+        },
+        {
+            "title": "Freythorn's Lair",
+            "image": "/src/assets/act1/10_freythorn.webp"
+        },
+        {
+            "title": "Ogham Farmlands",
+            "image": "/src/assets/act1/11_ogham_farmlands.webp"
+        },
+        {
+            "title": "Ogham Village",
+            "image": "/src/assets/act1/12_ogham_village.webp"
+        },
+        {
+            "title": "Manor Ramparts",
+            "image": "/src/assets/act1/13_manor_ramparts.webp"
+        },
+        {
+            "title": "Ogham Manor 1",
+            "image": "/src/assets/act1/14_ogham_manor1.webp"
+        },
+        {
+            "title": "Ogham Manor 2",
+            "image": "/src/assets/act1/14_ogham_manor2.webp"
+        },
+        {
+            "title": "Ogham Manor 3",
+            "image": "/src/assets/act1/14_ogham_manor3.webp"
+        }
+    ]
+}

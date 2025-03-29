@@ -1,0 +1,142 @@
+---
+import ZoneLayoutCard from "../../components/ZoneLayoutCard.astro";
+import PageTitle from "../../components/PageTitle.astro";
+import Layout from "../../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+// prettier-ignore
+export async function getStaticPaths(): Promise<{ params: { act: number } }[]> {
+    const acts = await getCollection("acts");
+    return acts.map((currentAct) => ({
+        params: { 
+            act: currentAct.data.act, 
+        },
+        props: {
+            acts: acts,
+            title: currentAct.data.title,
+            zones: currentAct.data.zones.map((zone) => ({
+                title: zone.title,
+                image: zone.image,
+            })),
+        },
+    }));
+}
+
+interface Zone {
+    title: string;
+    image: string;
+}
+
+interface Props {
+    title: string;
+    zones: Zone[];
+}
+
+const { acts, title, zones } = Astro.props as Props;
+---
+
+<Layout>
+    <a class="top-button" href="#top-header">Scroll to top</a>
+    <div id="top-header" class="header">
+        <div>
+            <a href="/poe2layouts">Home</a>
+            {
+                acts.map((act) => (
+                    <a
+                        href={`/poe2layouts/act/${act.data.act}`}
+                        key={act.data.act}
+                    >
+                        {act.data.title}
+                    </a>
+                ))
+            }
+        </div>
+        <PageTitle title={title} />
+        <div class="zone-list">
+            {
+                zones.map((zone, index) => (
+                    <a href={`#zone-${index + 1}`} key={index}>
+                        {zone.title}
+                    </a>
+                ))
+            }
+        </div>
+    </div>
+    <div class="zone-images-container">
+        {
+            zones.map((zone, index) => (
+                <ZoneLayoutCard
+                    image={zone.image}
+                    title={zone.title}
+                    imageId={index + 1}
+                    key={index}
+                />
+            ))
+        }
+    </div>
+</Layout>
+
+<script>
+    let scrollToTopButton = document.getElementById("scroll-to-top-button");
+
+    window.onscroll = function () {
+        console.log("scrolliiiing");
+        handleScroll();
+    };
+
+    const handleScroll = () => {
+        if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+        ) {
+            console.log("showing");
+            scrollToTopButton.style.display = "block";
+        } else {
+            console.log("hiding");
+            scrollToTopButton.style.display = "none";
+        }
+    };
+
+    const topFunction = () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    };
+</script>
+
+<style>
+    .zone-images-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+    }
+    .zone-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+        padding: 1rem;
+        background-color: #333;
+    }
+    .zone-list a {
+        background-color: #444;
+        text-align: center;
+    }
+    .header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+        padding: 1rem;
+        background-color: #333;
+    }
+    .top-button {
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+    }
+</style>
