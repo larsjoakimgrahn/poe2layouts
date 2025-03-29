@@ -1,25 +1,26 @@
 ---
 const { path, imageId } = Astro.props;
 ---
+
 <div class="zone-layout-card" id=`zone-${imageId}`>
-  <a href=`#zone-${imageId-1}`>Prev</a>
-  <img src={path.replace('/public','/poe2layouts')} alt={path} />
-  <a href=`#zone-${imageId+1}`>Next</a>
+    <a href=`#zone-${imageId-1}`>Prev</a>
+    <img src={path.replace("/public", "/poe2layouts")} alt={path} />
+    <a href=`#zone-${imageId+1}`>Next</a>
 </div>
 <style>
-  div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  img {
-    max-width: 90vw;
-    max-height:90vh;
-    margin: 2rem;
-    scroll-snap-align: start;
-  }
-  .zone-layout-card {
-    padding:4rem;
-  }
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    img {
+        max-width: 90vw;
+        max-height: 90vh;
+        margin: 2rem;
+        scroll-snap-align: start;
+    }
+    .zone-layout-card {
+        padding: 4rem;
+    }
 </style>
