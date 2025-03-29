@@ -4,75 +4,75 @@
     "zones": [
         {
             "title": "Vastiri Outskirts",
-            "image": "/src/assets/act/2/01_vastiri_outskirts.webp"
+            "image": "../assets/act/2/01_vastiri_outskirts.webp"
         },
         {
             "title": "Mawdun Quarry",
-            "image": "/src/assets/act/2/02-Mawdun-Quarry.webp"
+            "image": "../assets/act/2/02-Mawdun-Quarry.webp"
         },
         {
             "title": "Mawdun Mine",
-            "image": "/src/assets/act/2/03-Mawdun-Mine.webp"
+            "image": "../assets/act/2/03-Mawdun-Mine.webp"
         },
         {
             "title": "Traitor's Passage 1",
-            "image": "/src/assets/act/2/04-Traitors-Passage1.webp"
+            "image": "../assets/act/2/04-Traitors-Passage1.webp"
         },
         {
             "title": "Traitor's Passage 2",
-            "image": "/src/assets/act/2/04-Traitors-Passage2.webp"
+            "image": "../assets/act/2/04-Traitors-Passage2.webp"
         },
         {
             "title": "Halani Gates",
-            "image": "/src/assets/act/2/05-Halani-Gates.webp"
+            "image": "../assets/act/2/05-Halani-Gates.webp"
         },
         {
             "title": "Keth Rough",
-            "image": "/src/assets/act/2/06_-_Keth_Rough.webp"
+            "image": "../assets/act/2/06_-_Keth_Rough.webp"
         },
         {
             "title": "Lost City",
-            "image": "/src/assets/act/2/07-Lost-City.webp"
+            "image": "../assets/act/2/07-Lost-City.webp"
         },
         {
             "title": "Buried Shrines",
-            "image": "/src/assets/act/2/08_-_Buried_Shrines.webp"
+            "image": "../assets/act/2/08_-_Buried_Shrines.webp"
         },
         {
             "title": "Valley of the Titans",
-            "image": "/src/assets/act/2/09_-_Valley_of_the_Titans_Rough.webp"
+            "image": "../assets/act/2/09_-_Valley_of_the_Titans_Rough.webp"
         },
         {
             "title": "Titan Grotto",
-            "image": "/src/assets/act/2/10-Titan-Grotto.webp"
+            "image": "../assets/act/2/10-Titan-Grotto.webp"
         },
         {
             "title": "Mastodon Badlands",
-            "image": "/src/assets/act/2/11-Mastodon-Badlands.webp"
+            "image": "../assets/act/2/11-Mastodon-Badlands.webp"
         },
         {
             "title": "Bone Pits",
-            "image": "/src/assets/act/2/12-Bone-Pits.webp"
+            "image": "../assets/act/2/12-Bone-Pits.webp"
         },
         {
             "title": "Deshar",
-            "image": "/src/assets/act/2/13-Deshar.webp"
+            "image": "../assets/act/2/13-Deshar.webp"
         },
         {
             "title": "Path of Mourning",
-            "image": "/src/assets/act/2/14-Path-Of-Mourning.webp"
+            "image": "../assets/act/2/14-Path-Of-Mourning.webp"
         },
         {
             "title": "Spires of Deshar",
-            "image": "/src/assets/act/2/15-Spires-of-Deshar.webp"
+            "image": "../assets/act/2/15-Spires-of-Deshar.webp"
         },
         {
             "title": "Dreadnought 1",
-            "image": "/src/assets/act/2/16-Dreadnought.webp"
+            "image": "../assets/act/2/16-Dreadnought.webp"
         },
         {
             "title": "Dreadnought 2",
-            "image": "/src/assets/act/2/17-Dreadnought.webp"
+            "image": "../assets/act/2/17-Dreadnought.webp"
         }
     ]
 }

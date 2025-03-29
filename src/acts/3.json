@@ -4,59 +4,59 @@
     "zones": [
         {
             "title": "Sandswept Marsh",
-            "image": "/src/assets/act/3/01-Sandswept-Marsh.webp"
+            "image": "../assets/act/3/01-Sandswept-Marsh.webp"
         },
         {
             "title": "Jungle Ruins",
-            "image": "/src/assets/act/3/02-Jungle-Ruins.webp"
+            "image": "../assets/act/3/02-Jungle-Ruins.webp"
         },
         {
             "title": "Infested Barrens",
-            "image": "/src/assets/act/3/04-Infested-Barrens.webp"
+            "image": "../assets/act/3/04-Infested-Barrens.webp"
         },
         {
             "title": "Azak Bog",
-            "image": "/src/assets/act/3/05-Azak-Bog.webp"
+            "image": "../assets/act/3/05-Azak-Bog.webp"
         },
         {
             "title": "Chimeral Wetlands",
-            "image": "/src/assets/act/3/06-Chimeral_Wetlands.webp"
+            "image": "../assets/act/3/06-Chimeral_Wetlands.webp"
         },
         {
             "title": "Jinquanis Machinarium",
-            "image": "/src/assets/act/3/07-Jinquanis-Machinarium.webp"
+            "image": "../assets/act/3/07-Jinquanis-Machinarium.webp"
         },
         {
             "title": "Jinquanis Sanctum",
-            "image": "/src/assets/act/3/08-Jinquanis_Sanctum.webp"
+            "image": "../assets/act/3/08-Jinquanis_Sanctum.webp"
         },
         {
             "title": "Matlan Waterways",
-            "image": "/src/assets/act/3/09-Matlan-Waterways.webp"
+            "image": "../assets/act/3/09-Matlan-Waterways.webp"
         },
         {
             "title": "Drowned City",
-            "image": "/src/assets/act/3/10-Drowned-City.webp"
+            "image": "../assets/act/3/10-Drowned-City.webp"
         },
         {
             "title": "Apex of Filth",
-            "image": "/src/assets/act/3/12-Apex-of-Filth.webp"
+            "image": "../assets/act/3/12-Apex-of-Filth.webp"
         },
         {
             "title": "Temple of Kopec",
-            "image": "/src/assets/act/3/13-Temple-of-Kopec.webp"
+            "image": "../assets/act/3/13-Temple-of-Kopec.webp"
         },
         {
             "title": "Utzaal",
-            "image": "/src/assets/act/3/14-Utzaal.webp"
+            "image": "../assets/act/3/14-Utzaal.webp"
         },
         {
             "title": "Aggorat",
-            "image": "/src/assets/act/3/15-Aggorat.webp"
+            "image": "../assets/act/3/15-Aggorat.webp"
         },
         {
             "title": "Black Chambers",
-            "image": "/src/assets/act/3/16-Black-Chambers.webp"
+            "image": "../assets/act/3/16-Black-Chambers.webp"
         }
     ]
 }
